@@ -1,0 +1,30 @@
+* {
+ box-sizing: border-box;
+}
+
+.left {
+    background-color: tomato;
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+}
+
+.main {
+    background-color: greenyellow;
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+}
+
+.right {
+    background-color: lightseagreen;
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+}
+
+@media screen and (max-width:800px) {
+        .left, .main, .right {
+            width:100%;
+        }
+}
