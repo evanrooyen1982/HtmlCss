@@ -7,10 +7,36 @@
     <body>
         <h1>HTML Forms</h1>
         <form action="" method="GET" autocomplete="off">
+            <h3>Text</h3>
             First Name:<br>
-            <input type="text" name="firstname"/><br>
+            <input  name="firstname"/><br>
             Last Name:<br>
             <input type="text" name="lastname"/><br><br>
+
+            <h3>Drop-down List</h3>
+            <select name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat" selected>Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+            <br>
+            <h3>Drop-down List Muti-selec</h3>
+            <select name="cars" multiple>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat" selected>Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <br>
+                <h3>Textarea</h3>
+                <textarea name="message" rows="10" cols="30"></textarea>
+                <h3>Textarea with CSS</h3>
+                <textarea name="message" style="width:200px;height:150px;"></textarea>
+
+                <h3>button</h3>
+                <button name="btnClickMe" type="button" onclick="alert('Hello World');">Click Me!</button>
+                <br>
             <input type="submit" value="Submit" />
         </form>
     </body>
