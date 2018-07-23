@@ -2,7 +2,7 @@
 
 <html>
     <head>
-
+        <meta charset="UTF-8">
     </head>
     <body>
         <h1>HTML Forms</h1>
@@ -37,7 +37,25 @@
                 <h3>button</h3>
                 <button name="btnClickMe" type="button" onclick="alert('Hello World');">Click Me!</button>
                 <br>
+
+                <h3>Html 5 datalist</h3>
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="IE">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+                <br>
             <input type="submit" value="Submit" />
+        </form>
+        <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <input id="a" type="text">
+            +
+            <input id="b" type="text">
+            =
+            <output name="x" for="a b"></output>
         </form>
     </body>
 </html>
